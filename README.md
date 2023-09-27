@@ -51,4 +51,12 @@ python3 -m pip install --upgrade Pillow
 sudo apt update
 sudo apt install python3-tk
 ```
+
+```txt
+X.Y.Z Version
+MAJOR version -- when you make incompatible API changes,
+MINOR version -- when you add functionality in a backwards-compatible manner
+PATCH version -- when you make backwards-compatible bug fixes.
+```
+
 ---
