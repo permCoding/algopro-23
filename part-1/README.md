@@ -21,7 +21,7 @@
 
 1) Язык программирования **Python** - https://www.python.org/downloads/  
 2) Редактор кода **VS Code** - https://code.visualstudio.com/  
-3) [repl](https://replit.com/~)  
+3) [Среда разработки replit](https://replit.com/~)  
 
 4) Клиент Git`а для Windows - [ссылка](https://central.github.com/deployments/desktop/desktop/latest/win32)  
 5) Клиент Git`а для андроида - [ссылка](https://play.google.com/store/apps/details?id=com.thirtydegreesray.openhub&hl=en)  
