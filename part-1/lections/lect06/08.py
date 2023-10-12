@@ -2,7 +2,7 @@ def get_lines(filename, title=True):
     shift = 1 if title else 0
     with open(filename) as f:
         lines = f.readlines()[shift:]
-    return lines    
+    return lines
 
 
 def create_obj(line):
@@ -15,10 +15,10 @@ def get_slice(lines, amount=3):
     return [create_obj(line) for line in lines][:amount]
 
 
-def get_filtred(lst, min_rate):
+def get_filtered(lst, min_rate):
     return [elm for elm in lst if elm[1] >= min_rate]
 
 
 lines = get_lines("./data/0.csv")
 data = get_slice(lines, 0)
-for elm in get_filtred(data, 176): print(elm)
+for elm in get_filtered(data, 176): print(elm)
