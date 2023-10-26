@@ -1,10 +1,17 @@
-import requests
+filename = "./txt/01.txt"
 
-url = "https://pcoding.ru/csv/17.txt"
+f = open(filename, "r", encoding="utf8")
+line = f.readline()
+f.close()
 
-response = requests.get(url)
-response.encoding = "utf8"
-lst = response.text.split('\n')
+lst = line.split(" ")
 
-for row in sorted(lst, key=lambda x: x.split(';')[1]):
-    print(row)
+nums = []
+for elm in lst: nums.append(int(elm))
+print(nums)
+
+nums = [int(elm) for elm in lst]
+print(nums)
+
+nums = list(map(int, lst))
+print(nums)

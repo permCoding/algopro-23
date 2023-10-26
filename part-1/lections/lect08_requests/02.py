@@ -4,4 +4,8 @@ f = open(filename, "r", encoding="utf8")
 line = f.readline()
 f.close()
 
-print(line)
+lst = line.split(" ")
+
+nums = [int(elm) for elm in lst if int(elm)%2 != 0]
+print(nums)
+
