@@ -4,7 +4,7 @@ import csv
 # filename = "./csv/abiturs.csv"
 filename = "./csv/exam_balls.csv"
 
-with open(filename) as f:  
+with open(filename, "r", encoding="utf8") as f:  
     reader = csv.reader(f, delimiter=";")
     
     headers = next(reader)  # читаем строку заголовков

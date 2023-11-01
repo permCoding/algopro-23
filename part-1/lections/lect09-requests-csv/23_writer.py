@@ -4,7 +4,7 @@ import csv
 filename = "./csv/abiturs.csv"
 # filename = "./csv/exam_balls.csv"
 
-with open(filename) as csvfile:
+with open(filename, "r", encoding="utf8") as csvfile:
     reader = csv.reader(csvfile, delimiter=",")
     rows = list(reader)
     titles = rows[0]  # заголовки

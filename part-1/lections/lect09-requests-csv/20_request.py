@@ -3,6 +3,7 @@ import csv
 
 
 filename = "https://pcoding.ru/csv/abiturs.csv"
+filename = "http://files-pcoding.1gb.ru/csv?filename=abiturs.csv"
 
 response = requests.get(filename)
 response.encoding = "utf8"
