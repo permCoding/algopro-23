@@ -4,7 +4,7 @@ import json
 
 filename = "./csv/abiturs.csv"
 
-with open(filename) as f:
+with open(filename, "r", encoding="utf8") as f:
     reader = csv.DictReader(f, delimiter=",")
     
     # for row in reader:

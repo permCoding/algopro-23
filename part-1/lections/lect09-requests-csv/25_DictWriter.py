@@ -10,7 +10,7 @@ with open(filename, "r", encoding="utf8") as f:
     titles = rows[0]  # заголовки
     abiturs = rows[1:]  # данные
 
-    with open("./csv/result.csv", "w", encoding="utf8") as f:
+    with open("./csv/result.csv", "w", encoding="utf8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=titles)
         writer.writeheader()
 
