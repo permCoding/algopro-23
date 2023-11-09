@@ -32,7 +32,7 @@ lst.index(elm) index(elm, i) index(elm, start, finish)
 cp = lst[::] lst.copy()
 randome.shuffle(lst)
 map filter reduce lambda from functools import reduce
-
+sort sorted
 
 ```
 
