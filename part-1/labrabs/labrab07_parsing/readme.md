@@ -69,7 +69,7 @@ Cheboksary;-3°
 
 ```txt
 N;team;win;loss;up;down;balls
-8;Ак Барс;14;;12;93;79;40
+8;Ак Барс;14;12;93;79;40
 ...
 ```
 
