@@ -54,5 +54,7 @@ MAJOR version -- when you make incompatible API changes,
 MINOR version -- when you add functionality in a backwards-compatible manner
 PATCH version -- when you make backwards-compatible bug fixes.
 ```
+[Управляющие символы](https://ru.wikipedia.org/wiki/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%89%D0%B8%D0%B5_%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B)  
+[Регулярка для проверки email](https://pdw.ex-parrot.com/Mail-RFC822-Address.html)  
 
 ---
