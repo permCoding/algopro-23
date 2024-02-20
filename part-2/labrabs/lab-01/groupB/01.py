@@ -1,23 +1,27 @@
 from tkinter import *
 
-def gen():
-    print(123)
+
+def set_msg():
+    # вывести в поле msg через пробел 
+    # 5 случайных двузначных целых чисел
+    msg['text'] = str(123)
+
 
 win = Tk()
-win.title("labrab-01")
-win.geometry("600x300")
-font = ('Consolas', 16)
+win.title("labrab-1")
+win.configure(bg="#FFFACD")
+win.geometry("666x400+300+100")
+font = ("Consolas", 16)  # "Consolas 14 Bold"
 
-btn = Button(win, font=font, width=32, \
-    fg='yellow', bg='darkgreen', \
-    text='Сгенерировать', command=gen)
+btn = Button(win, font=font, text="Сгенерировать",
+        fg="black", bg="#20B2AA", command=set_msg)
 btn.pack(pady=10)
 
-win.mainloop()
+msg = Message(win, font=font, width=400, 
+        bg="#FFFACD", text="- - - - - - - -")
+msg.pack(pady=10)
 
-"""
-1)
-сгенерировать 10 случайных чисел от 100 до 999
-и сохранить в файл gen.txt
-121 455 666 754 123 ...
-"""
+
+
+
+win.mainloop()
