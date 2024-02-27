@@ -1,6 +1,5 @@
 from tkinter import *
 from tkinter import ttk
-import g4f
 
 
 def set_msg():
