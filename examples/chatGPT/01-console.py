@@ -12,4 +12,4 @@ def get_message(request):
 
 
 request = "Выбери лишнее: блокнот, ручка, кошка, карандаш. Поясни свой выбор."
-print(''.join([message for message in get_message(request)]))
+print(''.join(get_message(request)))

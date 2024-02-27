@@ -14,7 +14,9 @@ def get_message(request):
     return response
 
 def set_msg(req):
-    msg = ''.join([message for message in get_message(req)])
+    # msg = ''.join([message for message in get_message(req)])
+    # msg = ''.join(list(get_message(req)))
+    msg = ''.join(get_message(req))
     editor.delete('1.0', END)
     editor.insert(END, msg)
 
