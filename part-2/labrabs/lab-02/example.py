@@ -6,7 +6,7 @@ import g4f
 def set_msg():
     txt = ent.get()  # получили имя файла
     # тут обработали текст
-    msg["text"] = txt  # это прмиер вывода в однострочное поле
+    msg["text"] = txt  # это пример вывода в однострочное поле
     editor.delete('1.0', END)  # тут стираем предыдущее содержимое
     editor.insert(END, '\n'.join(txt))  # это пример вывода в многострочное поле
 
@@ -26,7 +26,7 @@ btn.pack(pady=10)
 msg = Message(win, width=340, font=font, text="тут будет ответ")
 msg.pack(anchor=W, pady=10)  # это ОДНОстрочное поле для вывода
 
-editor = Text(wrap = "word", width=400, height=300, font=font)
+editor = Text(wrap="word", width=400, height=300, font=font)
 editor.pack(pady=10)  # это МНОГОстрочное поле для вывода
 
 win.mainloop()
