@@ -32,12 +32,65 @@
 ---  
 
 ```txt
+* как проверить версию Python
+python -V
+
+* как удалить Python
+sudo apt remove python3
+sudo apt autoclean && sudo apt autoremove
+
+* установить требуемую версию Python, например, 3.12
+
+sudo apt update
+
+sudo apt install wget build-essential libreadline-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev
+
+- загрузить архив требуемого питона: https://www.python.org/downloads/source/
+- и распаковать этот архив:
+tar -Jxvf Python-3.12.2.tar.xz
+
+- перейти в папку
+cd Python-3.12.2
+
+- конфигурировать
+./configure --enable-optimizations --prefix=/usr/local --enable-shared LDFLAGS="-Wl,-rpath /usr/local/lib"
+
+- установить в папку /usr/local/bin
+sudo make -j4 && sudo make altinstall
+
+- Check the version of Python and pip installed.
+
+$ python3.12 --version
+Python 3.12.2
+
+$ pip3.12 --version
+pip 24.0 from /usr/local/lib/python3.12/site-packages/pip (python 3.12)
+
+- как устанавливать пакеты
+sudo pip3.12 install module-name
+- например:
+sudo pip3.12 install beautifulsoup4
+
+- как установить виртуальное окружение
+python3.12 -m venv venv
+- активировать
+source venv/bin/activate
+
+- установить локально пакеты и работать
+
+- деактивировать
+deactivate
+
+---
+
 * как установить в linux pip
 sudo apt update
 sudo apt install python3-pip
 
 * проверить версию pip
 pip3 --version
+
+---
 
 * как установить в linux библиотеку pillow
 python3 -m pip install --upgrade pip
@@ -46,6 +99,10 @@ python3 -m pip install --upgrade Pillow
 * как установить в linux библиотеку tkinter
 sudo apt update
 sudo apt install python3-tk
+
+* Установить шрифт Fira Code
+sudo apt update
+sudo apt install fonts-firacode
 ```
 
 ```txt
