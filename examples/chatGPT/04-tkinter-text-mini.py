@@ -22,15 +22,15 @@ def set_msg(req):
 
 win = Tk()
 win.title("chatGPT")
-win.geometry("800x600")
+win.geometry("820x666+90+90")
 
 frame = ttk.Frame(relief='flat', padding=[28, 10])
 frame.pack(pady=5)
 
-lbl = Label(frame, font=('Consolas', 10), text='Введи свой запрос:', fg='darkgrey')
+lbl = Label(frame, font=('Consolas', 10), text='Введи свой запрос:', fg='#334433')
 lbl.pack(anchor=W)
 
-ent = Text(frame, wrap = "word", width=72, height=3)
+ent = Text(frame, wrap = "word", width=76, height=3)
 ent.configure(fg='darkgreen', bg='#CCEEDD', font=('Consolas', 12))
 req = 'Выбери лишнее: блокнот, ручка, кошка, карандаш. Поясни свой выбор.'
 ent.insert(END, req)
@@ -51,9 +51,9 @@ btn_mini = Button(frameB, font=('Consolas', 12), width=20, bg='#4499dd',
 btn_mini.pack(side=LEFT, padx=5)
 
 
-editor = Text(wrap = "word")
-editor.configure(fg='darkgreen', bg='white', font=('Consolas', 12))
-editor.pack(pady=10)
+editor = Text(win, wrap = "word")
+editor.configure(fg='darkgreen', bg='#E5F0E0', font=('Consolas', 12))
+editor.pack(pady=10, padx=15)
 
 win.mainloop()
 
