@@ -1,4 +1,5 @@
-# algopro-23
+## algopro-23
+
 **Алгоритмизация и программирование 2023-2024**  
 **БЕЛЯКОВ Андрей Юрьевич** [telegram](https://t.me/AndreyPerm)  
 [Анкетирование и Тестирование - EXAM](http://exam.1gb.ru/)  
@@ -6,7 +7,8 @@
 
 ---  
 
-Объём учебной дисциплины:  
+### Объём учебной дисциплины:
+
 | семестр | Лекций | ЛабРаб | Отчётность |
 | :-: | :-: | :-: | :-: |
 | 1 | 14 | 11 | Экзамен |
@@ -21,6 +23,8 @@
 
 ---  
 
+### links
+
 > [Учебник Алгоритмы на Python](https://pcoding.ru/pdf/PythonJunior.pdf)  
 > [Учебник Тектовые файлы на Python](https://pcoding.ru/pdf/PythonJunior_files.pdf)  
 > [ГОСТ 19.701-90 Схемы алгоритмов...](https://pcoding.ru/gost/GOST_19.701-90_Алгоритмы.pdf)  
@@ -31,7 +35,13 @@
 
 ---  
 
+### справочные материалы
+
 ```txt
+* сменить команду python3 на python:
+sudo apt update
+sudo apt -y install python-is-python3
+
 * как проверить версию Python
 python -V
 
@@ -71,14 +81,19 @@ sudo pip3.12 install module-name
 - например:
 sudo pip3.12 install beautifulsoup4
 
-- как установить виртуальное окружение
+---
+
+  - для работы с виртуальным окружением нужно установить пакет venv:
+sudo apt install python3-venv
+  - далее создать виртуальное окружение (один из этих вариантов):
 python3.12 -m venv venv
-- активировать
+python3 -m venv venv
+python -m venv venv
+  - активировать:
 source venv/bin/activate
-
-- установить локально пакеты и работать
-
-- деактивировать
+  - установить локально пакеты и работать:
+...
+  - деактивировать:
 deactivate
 
 ---
@@ -89,9 +104,9 @@ sudo apt install python3-pip
 
 * проверить версию pip
 pip3 --version
+```
 
----
-
+```txt
 * как установить в linux библиотеку pillow
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade Pillow
@@ -111,6 +126,7 @@ MAJOR version -- when you make incompatible API changes,
 MINOR version -- when you add functionality in a backwards-compatible manner
 PATCH version -- when you make backwards-compatible bug fixes.
 ```
+
 [Управляющие символы](https://ru.wikipedia.org/wiki/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%89%D0%B8%D0%B5_%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B)  
 [Регулярка для проверки email](https://pdw.ex-parrot.com/Mail-RFC822-Address.html)  
 
