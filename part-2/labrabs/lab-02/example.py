@@ -2,11 +2,11 @@ from tkinter import *
 
 
 def set_msg():
-    txt = ent.get()  # получили имя файла
+    filename = ent.get()  # получили имя файла
     # тут обработали текст
-    msg["text"] = txt  # это пример вывода в однострочное поле
-    editor.delete('1.0', END)  # тут стираем предыдущее содержимое
-    editor.insert(END, '\n'.join(txt))  # это пример вывода в многострочное поле
+    msg["text"] = filename  # это пример вывода в однострочное поле
+    txt.delete('1.0', END)  # тут стираем предыдущее содержимое
+    txt.insert(END, '\n'.join(filename))  # это пример вывода в многострочное поле
 
 
 win = Tk()
@@ -24,8 +24,8 @@ btn.pack(pady=10)
 msg = Message(win, width=340, font=font, text="тут будет ответ")
 msg.pack(anchor=W, pady=10)  # это ОДНОстрочное поле для вывода
 
-editor = Text(wrap="word", width=400, height=300, font=font)
-editor.pack(pady=10)  # это МНОГОстрочное поле для вывода
+txt = Text(wrap="word", width=400, height=300, font=font)
+txt.pack(pady=10)  # это МНОГОстрочное поле для вывода
 
 win.mainloop()
 
