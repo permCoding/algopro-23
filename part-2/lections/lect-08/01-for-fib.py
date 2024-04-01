@@ -8,7 +8,7 @@ def fib_for(n):  # решить кролика
 n = 10
 result = fib_for(n)
 print(result)
-print(result[-1])
+print(f"fib({n}) = {result[-1]}")
 
 '''
 0 1 2 3 4 5 6 7  8  9  10 
