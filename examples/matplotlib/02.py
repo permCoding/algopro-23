@@ -1,5 +1,5 @@
-# sudo apt-get install python3-numpy
-# sudo apt-get -y install python3-matplotlib
+# sudo apt install python3-numpy
+# sudo apt -y install python3-matplotlib
 # https://matplotlib.org/
 import matplotlib.pyplot as plt
 import numpy as np

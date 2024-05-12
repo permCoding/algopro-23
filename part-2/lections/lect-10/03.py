@@ -9,7 +9,7 @@ def sort_bubble(nums):
     return nums
 
 
-nums = [rnd(1, 10_000) for _ in range(20_000)]  # asc
+nums = [rnd(1, 10_000) for _ in range(20_000)]  # asc 20_000 -> 40 sec
 
 start = dt()
 srtd = sort_bubble(nums)
