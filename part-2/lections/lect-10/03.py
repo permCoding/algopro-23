@@ -9,10 +9,32 @@ def sort_bubble(nums):
     return nums
 
 
-nums = [rnd(1, 10_000) for _ in range(10_000)]  # asc 20_000 -> 40 sec
+def sort_select(nums):
+    pass
 
-start = dt()
-srtd = sort_bubble(nums)
-finish = dt()
-print(round(finish-start, 3))
-# print(srtd)
+def sort_merge(nums):
+    pass
+
+x = list(range(1_000, 8_000, 1_000))
+
+y = []
+for count in range(1_000, 8_000, 1_000):
+    nums = [rnd(1, 10_000) for _ in range(count)]
+
+    start = dt()
+    sort_bubble(nums)
+    finish = dt()
+    
+    y.append( round(finish-start, 3) )
+
+for i in range(len(x)): print(x[i], y[i])
+
+"""
+1000 0.112
+2000 0.461
+3000 1.075
+4000 2.145
+5000 3.824
+6000 4.344
+7000 5.994
+"""
