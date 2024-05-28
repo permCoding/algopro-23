@@ -7,6 +7,7 @@ y1 = np.sin(2*x)
 y2 = 2/3*np.cos(x)
 
 styles = plt.style.available
+print(styles)
 plt.style.use(styles[0])
 
 plt.plot(x, y1, 'green', x, y2, 'red')
@@ -16,8 +17,8 @@ plt.legend(['sin(2*x)', '2/3*cos(x)'])
 plt.xlabel('-x-')
 plt.ylabel('-y-')
 
-plt.axhline(linewidth=1, color='#22D')
-plt.axvline(linewidth=1, color='#22D')
+plt.axhline(linewidth=3, color='#22D')
+plt.axvline(linewidth=5, color='#22D')
 
 plt.grid(True)
 

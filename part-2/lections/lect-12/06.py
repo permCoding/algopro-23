@@ -15,7 +15,7 @@ plt.style.use('Solarize_Light2')
 plt.plot(x, y1, linewidth=3, color='green', label='y1')
 plt.plot(x, y2, color='red', label='y2')
 plt.plot(x, y3, lw=4, color='#A2B', label='y3')
-plt.legend()  
+plt.legend()
 # plt.legend(['y1', 'y2', 'y3'])
 plt.title('Графики функций')
 

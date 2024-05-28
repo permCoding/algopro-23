@@ -2,10 +2,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-x1 = np.linspace(-2.0*np.pi, 0.0*np.pi, 101)
+x1 = np.linspace(-2.0*np.pi, 0.2*np.pi, 101)
 y1 = 1/2*np.sin(2*x1)
 
-x2 = np.linspace(0.0*np.pi, 2.0*np.pi, 101)
+x2 = np.linspace(0.2*np.pi, 2.0*np.pi, 101)
 y2 = np.sin(x2)
 
 plt.plot(x1, y1, linewidth=3, color='green')
